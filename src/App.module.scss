@@ -4,7 +4,7 @@
 	max-width: 85rem;
 	height: 90vh;
 	margin: auto;
-	margin-top: 2.5rem;
+	margin-top: 3rem;
 }
 
 .textContainer {
@@ -13,7 +13,7 @@
 		
 		h1 {
 			color: $VeryDarkBlue;
-			font-size: 2rem;
+			font-size: 2.1rem;
 			font-weight: 200;
 			line-height: 130%;
 
@@ -23,7 +23,7 @@
 		}
 
 		p {
-			width: 29rem;
+			width: 30rem;
 			margin: auto;
 			margin-top: 1rem;
 			color: $GrayishBlue;
@@ -34,11 +34,15 @@
 
 .cardsContainer {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	column-gap: 2rem;
 	padding-top: 2rem;
 	height: 80%;
+	
+	transition-property: transform;
+	transition-duration: 0.7s;
 	
 	.columnCards {
 		display: flex;
@@ -47,8 +51,14 @@
 	}	
 }
 
-.attribution { font-size: 0.7rem; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+	font-size: 0.7rem;
+	text-align: center;
+	margin-top: 1rem;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
 
 @media (max-width: 1050px) {
 	.cardsContainer {
@@ -56,11 +66,13 @@
 		row-gap: 1.5rem;
 		height: auto;
 		margin-top: 4rem;
+
+		transform: rotate(360deg);
 	}
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 	.mainContainer {
 		width: 80%;
 		height: 100%;
