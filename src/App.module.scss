@@ -1,0 +1,88 @@
+@import './variables.scss';
+
+.mainContainer {
+	max-width: 85rem;
+	height: 90vh;
+	margin: auto;
+	margin-top: 2.5rem;
+}
+
+.textContainer {
+	height: 20%;
+	text-align: center;
+		
+		h1 {
+			color: $VeryDarkBlue;
+			font-size: 2rem;
+			font-weight: 200;
+			line-height: 130%;
+
+			span {
+				font-weight: 600;
+			}
+		}
+
+		p {
+			width: 29rem;
+			margin: auto;
+			margin-top: 1rem;
+			color: $GrayishBlue;
+			line-height: 150%;
+			font-size: 0.9rem;
+		}
+}
+
+.cardsContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 2rem;
+	padding-top: 2rem;
+	height: 80%;
+	
+	.columnCards {
+		display: flex;
+		flex-direction: column;
+		row-gap: 2rem;
+	}	
+}
+
+.attribution { font-size: 0.7rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 1050px) {
+	.cardsContainer {
+		flex-direction: column;
+		row-gap: 1.5rem;
+		height: auto;
+		margin-top: 4rem;
+	}
+
+}
+
+@media (max-width: 500px) {
+	.mainContainer {
+		width: 80%;
+		height: 100%;
+	}
+
+	.textContainer {
+
+		h1 {
+			font-size: 1.45rem;
+		}
+
+		p {
+			width: 100%;
+		}
+	}
+
+	.cardsContainer {
+		padding: 0rem 0rem 3rem 0rem;
+		height: auto;
+	}
+
+	.attribution {
+		padding-bottom: 1rem;
+	}
+}

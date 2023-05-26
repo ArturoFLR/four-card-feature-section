@@ -1,0 +1,66 @@
+@import '../variables.scss';
+
+.cardContainer {
+	width: 20rem;
+	height: 14rem;
+	background-color: white;
+	border-radius: 7px;
+	padding: 2rem;
+	box-shadow: 0px 6px 18px hsl(230, 45%, 86%);
+}
+
+
+.textContainer {
+	height: 50%;
+	
+	.heading {
+		color: $VeryDarkBlue;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		font-size: 1.1rem;
+		
+
+	}
+
+	.paragraph {
+		color: $GrayishBlue;
+		font-size: 0.8rem;
+		line-height: 150%;
+	}
+}
+
+.imageContainer {
+	height: 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+
+	img {
+		width: 55px;
+		height: 55px;
+	}
+}
+
+.cyan {
+	border-top: 4px solid $Cyan;
+}
+
+.red {
+	border-top: 4px solid $Red;
+}
+
+.orange{
+	border-top: 4px solid $Orange;
+}
+
+.blue {
+	border-top: 4px solid $Blue;
+}
+
+
+
+@media (max-width: 500px) {
+	.cardContainer {
+		width: 100%;
+	}
+}
